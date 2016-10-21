@@ -71,6 +71,11 @@ describe('Fikso', () => {
       fikso = new Fikso()
     })
 
+    it('should return global settings', () => {
+      fikso.set({ isGlobal: true })
+      expect(fikso.get().isGlobal).to.be.true
+    })
+
     it('should merge settings', () => {
       fikso.set({ isGlobal: true })
       fikso

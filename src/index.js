@@ -35,7 +35,8 @@ class Fikso {
 
           sources.push(state[currentKeyPath])
           return currentKeyPath
-        }
+        },
+        ''
       )
 
     return merge({}, ...sources)
